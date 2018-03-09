@@ -1,0 +1,8 @@
+<h1>Hello this a website to shorten your url</h1>
+
+<form action="{% url 'shorten' %}" method="post">{% csrf_token %}
+    <label>
+    <input type="text" name="url">
+    <button>Submit</button>
+    </label>
+</form>
